@@ -9,9 +9,7 @@ editor_options:
 
 ```{r}
 # 関数の読み込み
-install.packages("tidyverse")
 library(tidyverse)
-install.packages("iNEXT")
 library(iNEXT)
 
 # データの読み込み
@@ -20,31 +18,59 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 ```
 
 ```{r}
-# trnL、新松戸、閾値なし(リード削除なし)
-trnL_shinmatsudo_0 <-
-  trnL %>%
-  select(ASV_ID:Shinmats23_trnL) %>%
-  column_to_rownames("ASV_ID") %>%
-  iNEXT(q = 0, datatype = "abundance")
-ggiNEXT(trnL_shinmatsudo_0)
-```
-
-```{r}
-# trnL、千葉、閾値なし(リード削除なし)
-trnL_chiba_0 <-
-  trnL %>%
-  select(ASV_ID:Chiba23_trnL) %>%
-  column_to_rownames("ASV_ID") %>%
-  iNEXT(q = 0, datatype = "abundance")
-ggiNEXT(trnL_chiba_0)
-```
-
-```{r}
-# trnL、津田沼、閾値なし(リード削除なし)
-trnL_tsudanuma_0 <-
+# trnL、リード削除なし
+trnL_inext <-
   trnL %>%
   select(ASV_ID:Tsudanum23_trnL) %>%
   column_to_rownames("ASV_ID") %>%
   iNEXT(q = 0, datatype = "abundance")
-ggiNEXT(trnL_tsudanuma_0)
+ggiNEXT(trnL_inext) +
+  labs(title = "trnL")
+```
+
+```{r}
+# trnL、リード削除100以下
+trnL_inext_100 <-
+  trnL %>%
+  select(ASV_ID:Tsudanum23_trnL) %>%
+  column_to_rownames("ASV_ID") %>%
+  filter(Shinmats23_trnL > 100 | Chiba23_trnL > 100 | Tsudanum23_trnL > 100) %>% 
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(trnL_inext_100) +
+  labs(title = "trnL(リード数100以下のASVを削除)")
+```
+
+```{r}
+# COI、リード削除なし
+COI_iNEXT <-
+  COI %>%
+  select(ASV_ID:Tsudanum23_ZBJ) %>%
+  column_to_rownames("ASV_ID") %>%
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(COI_iNEXT) +
+  labs(title = "COI")
+```
+
+```{r}
+# COI、リード削除10以下
+COI_iNEXT_10 <-
+  COI %>%
+  select(ASV_ID:Tsudanum23_ZBJ) %>%
+  column_to_rownames("ASV_ID") %>%
+  filter(Shinmats23_ZBJ > 10 | Chiba23_ZBJ > 10 | Tsudanum23_ZBJ > 10) %>% 
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(COI_iNEXT_10) +
+  labs(title = "COI(リード数10以下のASVを削除)")
+```
+
+```{r}
+# COI、リード削除100以下
+COI_iNEXT_100 <-
+  COI %>%
+  select(ASV_ID:Tsudanum23_ZBJ) %>%
+  column_to_rownames("ASV_ID") %>%
+  filter(Shinmats23_ZBJ > 100 | Chiba23_ZBJ > 100 | Tsudanum23_ZBJ > 100) %>% 
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(COI_iNEXT_100) +
+  labs(title = "COI(リード数100以下のASVを削除)")
 ```
