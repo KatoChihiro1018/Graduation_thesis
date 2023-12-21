@@ -13,7 +13,7 @@ editor: visual
 
 　本研究では、千葉県北西部の3地点にてムクドリ *Sturnus cineraceus* の排泄物のサンプリングを行った。
 
-<!-- この項で採取場所の細かい説明も加えること -->
+<!-- この項で採取場所の細かい説明も加えること -天気-周辺施設・環境-個数-->
 
 ### 2.1.1　津田沼
 
@@ -87,7 +87,7 @@ editor: visual
 | trnL-c       | 5'-CGAAATCGGTAGACGCTACG-3' (Tm=64.4)           |
 | trnL-h       | 5'-CCATTGAGTCTCTGCACCTATC-3' (Tm=62.54)        |
 
-ZBJ-Artは節足動物COI領域を、trnLは葉緑体trnL領域を増幅するためのプライマーである。
+ZBJ-Art(Zeale et al., 2011)は節足動物COI領域を、trnL(Taberlet et al., 1991 & 2007)は葉緑体trnL領域を増幅するためのプライマーである。
 
 ### 2.3.2　2ndPCR
 
@@ -113,7 +113,7 @@ ZBJ-Artは節足動物COI領域を、trnLは葉緑体trnL領域を増幅する�
 使用したprimerの配列は次の通りである。
 
 | プライマー名 | 塩基配列                                                           |
-|:-----------------|:-----------------------------------------------------|
+|:---------------|:-------------------------------------------------------|
 | 2ndF         | 5'-AATGATACGGCGACCACCGAGATCTACAC-Index2- ACACTCTTTCCCTACACGACGC-3' |
 | 2ndR         | 5'-CAAGCAGAAGACGGCATACGAGAT-Index1- GTGACTGGAGTTCAGACGTGTG- 3'     |
 
