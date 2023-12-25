@@ -74,3 +74,7 @@ COI_iNEXT_100 <-
 ggiNEXT(COI_iNEXT_100) +
   labs(title = "COI(リード数100以下のASVを削除)")
 ```
+
+### 各ASVと種の対応表_trnL
+
+<https://docs.google.com/spreadsheets/d/1EByvbiL1dI2_A18lY3g3OqXs6lC_TgcriWWzxicqhlE/edit?usp=sharing>
