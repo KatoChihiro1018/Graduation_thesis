@@ -5,6 +5,16 @@ format: html
 editor: visual
 ---
 
+```{r}
+# 関数の読み込み
+library(tidyverse)
+library(iNEXT)
+
+# データの読み込み
+COI <- read_csv("data_raw/COICustom157bp/23111007_1COICustom157bp/4_相同性が高い生物種リスト(BLAST結果10位まで).csv")
+trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_相同性が高い生物種リスト(BLAST結果10位まで).csv")
+```
+
 ## 第1章　研究背景・目的
 
 ## 第2章　材料と方法
@@ -12,8 +22,6 @@ editor: visual
 ### 2.1　サンプリング
 
 　本研究では、千葉県北西部の3地点にてムクドリ *Sturnus cineraceus* の排泄物のサンプリングを行った。
-
-<!-- この項で採取場所の細かい説明も加えること -天気-周辺施設・環境-個数-->
 
 ### 2.1.1　津田沼
 

@@ -56,21 +56,21 @@ editor: visual
 ------------------------------------------------------------------------
 
 **No.07**\
-**Title**:\
-**Author**:\
-**Year**:\
-**Link**:\
-**Contents**:\
+**Title**: Identification of Food Plants in the Diet of Japanese Ptarmigan (*Lagopus mutus japonicus*) in the Japan's Northern Japan Alps using DNA Barcoding\
+**Author**: Taichi Fujii\
+**Year**: 2019\
+**Link**: <https://doi.org/10.20798/awhswhs.6.2_13>\
+**Contents**: iNEXTパッケージと希釈化曲線\
 **Usage**:
 
 ------------------------------------------------------------------------
 
 **No.08**\
-**Title**:\
-**Author**:\
-**Year**:\
-**Link**:\
-**Contents**:\
+**Title**: 生態学におけるビッグデータ解析の手法―生物群集解析の基礎理論―\
+**Author**: 門脇浩明\
+**Year**: 2019\
+**Link**: <https://doi.org/10.5956/jriet.48.3_126>\
+**Contents**: 希釈法についての説明\
 **Usage**:
 
 ------------------------------------------------------------------------
