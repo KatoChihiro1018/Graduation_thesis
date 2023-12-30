@@ -18,6 +18,8 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 ```
 
 ```{r}
+#| echo: false
+#| layout-ncol: 2
 # trnL、リード削除なし
 trnL_inext <-
   trnL %>%
@@ -26,9 +28,7 @@ trnL_inext <-
   iNEXT(q = 0, datatype = "abundance")
 ggiNEXT(trnL_inext) +
   labs(title = "trnL")
-```
 
-```{r}
 # trnL、リード削除100以下
 trnL_inext_100 <-
   trnL %>%
@@ -41,6 +41,9 @@ ggiNEXT(trnL_inext_100) +
 ```
 
 ```{r}
+#| echo: false
+#| layout-ncol: 3
+
 # COI、リード削除なし
 COI_iNEXT <-
   COI %>%
@@ -49,9 +52,7 @@ COI_iNEXT <-
   iNEXT(q = 0, datatype = "abundance")
 ggiNEXT(COI_iNEXT) +
   labs(title = "COI")
-```
 
-```{r}
 # COI、リード削除10以下
 COI_iNEXT_10 <-
   COI %>%
@@ -61,9 +62,7 @@ COI_iNEXT_10 <-
   iNEXT(q = 0, datatype = "abundance")
 ggiNEXT(COI_iNEXT_10) +
   labs(title = "COI(リード数10以下のASVを削除)")
-```
 
-```{r}
 # COI、リード削除100以下
 COI_iNEXT_100 <-
   COI %>%
@@ -74,6 +73,7 @@ COI_iNEXT_100 <-
 ggiNEXT(COI_iNEXT_100) +
   labs(title = "COI(リード数100以下のASVを削除)")
 ```
+
 
 ### 各ASVと種の対応表_trnL
 
