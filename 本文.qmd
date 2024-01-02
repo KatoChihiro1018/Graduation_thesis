@@ -6,6 +6,8 @@ editor: visual
 ---
 
 ```{r}
+#| echo: false
+
 # 関数の読み込み
 library(tidyverse)
 library(iNEXT)
@@ -121,7 +123,7 @@ ZBJ-Art(Zeale et al., 2011)は節足動物COI領域を、trnL(Taberlet et al., 1
 使用したprimerの配列は次の通りである。
 
 | プライマー名 | 塩基配列                                                           |
-|:---------------|:-------------------------------------------------------|
+|:------------------|:----------------------------------------------------|
 | 2ndF         | 5'-AATGATACGGCGACCACCGAGATCTACAC-Index2- ACACTCTTTCCCTACACGACGC-3' |
 | 2ndR         | 5'-CAAGCAGAAGACGGCATACGAGAT-Index1- GTGACTGGAGTTCAGACGTGTG- 3'     |
 
@@ -151,6 +153,87 @@ ZBJ-Art(Zeale et al., 2011)は節足動物COI領域を、trnL(Taberlet et al., 1
 ### 3.3　種同定
 
 ### 3.3.1　iNEXTパッケージを用いた解析
+
+　R studio及びiNEXTパッケージ(Chao, 2016)を用いて希釈化曲線を描画し、それぞれのPCRで出現した各生物種のリード数に基づいて信頼性を判断した。
+
+　プライマーとしてtrnL-c/hを用いたPCRでは、リード数が2桁以下のASVを削除したものと削除しなかったもので大きな差異が見られなかったため、全てのASVについて信頼できると考えた。また、リード数が1桁のASVはそもそも検出されなかった。
+
+```{r}
+#| echo: false
+#| layout-ncol: 2
+# trnL、リード削除なし
+trnL_inext <-
+  trnL %>%
+  select(ASV_ID:Tsudanum23_trnL) %>%
+  column_to_rownames("ASV_ID") %>%
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(trnL_inext) +
+  labs(title = "trnL")
+
+# trnL、リード削除100以下
+trnL_inext_100 <-
+  trnL %>%
+  select(ASV_ID:Tsudanum23_trnL) %>%
+  column_to_rownames("ASV_ID") %>%
+  filter(Shinmats23_trnL > 100 | Chiba23_trnL > 100 | Tsudanum23_trnL > 100) %>% 
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(trnL_inext_100) +
+  labs(title = "trnL(リード数100以下のASVを削除)")
+```
+
+　プライマーとしてZBJ-ArtF1c/R2cを用いたPCRでは、リード数が2桁以下のASVを削除したものの希釈化曲線の結果がリード数が1桁以下のASVを削除したもの及び削除しなかったものの結果と異なっていた。リード数が1桁以下のASVを削除したもの及び削除しなかったものの間には大きな差異が見られなかったため、全てのASVについて信頼できると考えた。
+
+```{r}
+#| echo: false
+#| layout-ncol: 3
+
+# COI、リード削除なし
+COI_iNEXT <-
+  COI %>%
+  select(ASV_ID:Tsudanum23_ZBJ) %>%
+  column_to_rownames("ASV_ID") %>%
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(COI_iNEXT) +
+  labs(title = "COI")
+
+# COI、リード削除10以下
+COI_iNEXT_10 <-
+  COI %>%
+  select(ASV_ID:Tsudanum23_ZBJ) %>%
+  column_to_rownames("ASV_ID") %>%
+  filter(Shinmats23_ZBJ > 10 | Chiba23_ZBJ > 10 | Tsudanum23_ZBJ > 10) %>% 
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(COI_iNEXT_10) +
+  labs(title = "COI(リード数10以下のASVを削除)")
+
+# COI、リード削除100以下
+COI_iNEXT_100 <-
+  COI %>%
+  select(ASV_ID:Tsudanum23_ZBJ) %>%
+  column_to_rownames("ASV_ID") %>%
+  filter(Shinmats23_ZBJ > 100 | Chiba23_ZBJ > 100 | Tsudanum23_ZBJ > 100) %>% 
+  iNEXT(q = 0, datatype = "abundance")
+ggiNEXT(COI_iNEXT_100) +
+  labs(title = "COI(リード数100以下のASVを削除)")
+```
+
+### 3.3.2　種同定
+
+　現れた全ての生物種について学名・和名・分類階級の確認を行った。各ASVについて、Identity(ASV配列とデータベース配列の一致した塩基の割合)が等しい生物種が複数検出された場合は、最も近いところで共通する分類群をOTUに当てた(小村,2020)。
+
+　同定の際には、主に以下のデータベースを参照した。その他の細かな情報源については、参考文献に記載する。
+
+国立科学博物館[「標本・資料統合データベース」](http://db.kahaku.go.jp/webmuseum/)
+
+日本分類学会連合[「日本産生物種数調査」](https://www.ujssb.org/biospnum/search.php)
+
+九州大学大学院農学研究院昆虫学教室[「昆虫学文献データベース(KONCHUR)」](https://insectdb.kyushu-u.ac.jp/index-j.html)
+
+農業環境変動研究センター[「昆虫データベース統合インベントリーシステム」](https://insectweb.rad.naro.go.jp/)
+
+米倉浩司・梶田忠 (2003-)[「BG Plants 和名－学名インデックス」(YList)](http://ylist.info)
+
+[フローラジア floraZia - 東・東南アジア植物多様性データベース](https://florazia.com/)
 
 ### 3.4　考察
 

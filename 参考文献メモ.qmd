@@ -76,12 +76,12 @@ editor: visual
 ------------------------------------------------------------------------
 
 **No.09**\
-**Title**:\
-**Author**:\
-**Year**:\
-**Link**:\
-**Contents**:\
-**Usage**:
+**Title**: iNEXT: an R package for rarefaction and extrapolation of species diversity (Hill numbers)\
+**Author**: Anne Chao\
+**Year**: 2016\
+**Link**: <https://doi.org/10.1111/2041-210X.12613>\
+**Contents**: iNEXTパッケージの説明と使用法\
+**Usage**: iNEXTパッケージをもちいた解析
 
 ------------------------------------------------------------------------
 
