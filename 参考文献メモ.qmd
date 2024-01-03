@@ -86,6 +86,106 @@ editor: visual
 ------------------------------------------------------------------------
 
 **No.10**\
+**Title**: 岡山理科大学生物地球学部生物地球学科旧植物生態学研究室HP「タチキジムシロ　*Potentilla erecta*」\
+**Author**:\
+**Year**:\
+**Link**: <http://www1.ous.ac.jp/garden/hada/plantsdic/angiospermae/dicotyledoneae/choripetalae/rosaceae/potentilla_erecta/potentilla_erecta.htm>\
+**Contents**: タチキジムシロ種同定\
+**Usage**: 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.11**\
+**Title**: THE IUCN RED LIST OF THREATENED SPIECIES™「Ulmus wallichiana」\
+**Author**:\
+**Year**:\
+**Link**: <https://www.iucnredlist.org/species/30410/9545816>\
+**Contents**: Ulmus wallichiana種同定\
+**Usage**: 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.12**\
+**Title**: 常緑越冬性コウライシバ (*Zoysia tenuifolia*, 宇都宮大学選抜種) の冬季における葉身部のアミノ酸含有量に関する研究\
+**Author**: 赤嶺光\
+**Year**: 2001\
+**Link**: <https://doi.org/10.11275/turfgrass1972.29.135>\
+**Contents**: コウライシバ種同定\
+**Usage**: 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.13**\
+**Title**: 日本産ハイゴケ科・ハイゴケ属は現在どのように扱われているのか\
+**Author**: 秋山弘之\
+**Year**: 2021\
+**Link**: <https://doi.org/10.24474/bryologicalresearch.12.6_149>\
+**Contents:** ハイゴケ種同定**\
+Usage:** 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.14**\
+**Title**: 広島大学デジタルミュージアム「シラホシコゲチャハエトリ　広島大学東広島キャンパス」\
+**Author**:\
+**Year**:\
+**Link**: <https://www.digital-museum.hiroshima-u.ac.jp/~main/index.php?title=%E3%82%B7%E3%83%A9%E3%83%9B%E3%82%B7%E3%82%B3%E3%82%B2%E3%83%81%E3%83%A3%E3%83%8F%E3%82%A8%E3%83%88%E3%83%AA_%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E6%9D%B1%E5%BA%83%E5%B3%B6%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9&mobileaction=toggle_view_desktop>\
+**Contents**: シラホシコゲチャハエトリ種同定\
+**Usage**: 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.15**\
+**Title**: 日本産ゾウムシデータベース\
+**Author**: 伊澤和義\
+**Year**:\
+**Link**: <http://de05.digitalasia.chubu.ac.jp/index.html>\
+**Contents**: ゾウムシ種同定\
+**Usage**: 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.16**\
+**Title**: 東京大学総合研究博物館　貧毛類標本データベース\
+**Author**:\
+**Year**:\
+**Link**: <https://umdb.um.u-tokyo.ac.jp/DDoubutu/invertebrate/oligochaeta/index.html>\
+**Contents**: ミミズ類同定\
+**Usage**: 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.17**\
+**Title**: Biological Information System for Marine Life「Platorchestia humicola」\
+**Author:**\
+**Year:**\
+**Link:** <https://www.godac.jamstec.go.jp/bismal/j/view/9030680>\
+**Contents:** オカトビムシ種同定**\
+Usage:** 3.3.2種同定
+
+------------------------------------------------------------------------
+
+No.**18**\
+**Title**: 日本産ヒメバチ上科(膜翅目)の属への検索表\
+**Author**: 渡辺恭平・藤江隼平\
+**Year**: 2022\
+**Link**:\
+**Contents**: ヒメバチ科種同定\
+**Usage**: 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.19**\
+**Title**: 農業環境変動研究センター所蔵の田中和夫コレクションオサムシ上科(昆虫綱：コウチュウ目)標本目録\
+**Author**: 吉松慎一他\
+**Year**: 2018\
+**Link**:\
+**Contents**: オサムシ科種同定\
+**Usage**: 3.3.2種同定
+
+------------------------------------------------------------------------
+
+**No.20**\
 **Title**:\
 **Author**:\
 **Year**:\
@@ -95,7 +195,17 @@ editor: visual
 
 ------------------------------------------------------------------------
 
-**No.11**\
+**No.21**\
+**Title**:\
+**Author**:\
+**Year**:\
+**Link**:\
+**Contents**:\
+**Usage**:
+
+------------------------------------------------------------------------
+
+**No.22**\
 **Title**:\
 **Author**:\
 **Year**:\

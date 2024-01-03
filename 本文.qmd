@@ -5,7 +5,7 @@ format: html
 editor: visual
 ---
 
-```{r}
+```{r 準備}
 #| echo: false
 
 # 関数の読み込み
@@ -35,13 +35,13 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 
 　2023年7月10日(晴天)19時から20時半に、葭川公園駅そばの樹下にて排泄物を採取した。ムクドリが集まっている樹木を目視にて確認し、その下にビニール傘を設置して落下する排泄物を受け止めてサンプリングを行った。
 
-![採取場所_千葉](image/採取場所_千葉.png "採取場所_千葉"){fig-align="center"}
+![採取場所_千葉](image/採取場所_千葉.png "採取場所_千葉"){fig-align="center"}{width=200px}
 
 ### 2.1.3　新松戸
 
 　2023年7月20日(晴天)19時から20時半に、レッドロブスター新松戸店前にて排泄物を採取した。ムクドリが集まっている樹木を目視にて確認し、その下にビニール傘を設置して落下する排泄物を受け止めてサンプリングを行った。
 
-![採取場所_新松戸](image/採取場所_新松戸.png "採取場所_新松戸"){fig-align="center"}
+![採取場所_新松戸](image/採取場所_新松戸.png "採取場所_新松戸"){fig-align="center"}{width=200px}
 
 ### 2.1.4　サンプリングした排泄物の処理
 
@@ -75,7 +75,7 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 
 ### 2.3.1　1stPCR
 
-　1stPCRでは、PCR組成液として2X Master Mix6.0μl、10μM 1st primers F0.24μl、10μM 1st primers R0.24μl、Template DNA1.0μl、滅菌超純水2.52μlの合計10μlを0.2mlチューブに入れた。温度条件は、95℃15分、94℃30秒、57℃90℃、72℃1分、72℃10分で行った。94℃30秒、57℃90℃、72℃1分の部分は35サイクル行った。
+　1stPCRでは、PCR組成液として2X Master Mix6.0μl、10μM 1st primers F0.24μl、10μM 1st primers R0.24μl、Template DNA1.0μl、滅菌超純水2.52μlの合計10μlを0.2mlチューブに入れた。温度条件は、95℃15分、94℃30秒、57℃90℃、72℃1分、72℃10分で行った。94℃30秒、57℃90秒、72℃1分の部分は35サイクル行った。
 
 　1stPCR後、得られた1stPCR産物を用いて電気泳動を行い、バンドが100-600bpに出ていることを確認したのち、生物技研へ発送した。
 
@@ -123,7 +123,7 @@ ZBJ-Art(Zeale et al., 2011)は節足動物COI領域を、trnL(Taberlet et al., 1
 使用したprimerの配列は次の通りである。
 
 | プライマー名 | 塩基配列                                                           |
-|:------------------|:----------------------------------------------------|
+|:-------------|:-------------------------------------------------------------------|
 | 2ndF         | 5'-AATGATACGGCGACCACCGAGATCTACAC-Index2- ACACTCTTTCCCTACACGACGC-3' |
 | 2ndR         | 5'-CAAGCAGAAGACGGCATACGAGAT-Index1- GTGACTGGAGTTCAGACGTGTG- 3'     |
 
@@ -158,9 +158,11 @@ ZBJ-Art(Zeale et al., 2011)は節足動物COI領域を、trnL(Taberlet et al., 1
 
 　プライマーとしてtrnL-c/hを用いたPCRでは、リード数が2桁以下のASVを削除したものと削除しなかったもので大きな差異が見られなかったため、全てのASVについて信頼できると考えた。また、リード数が1桁のASVはそもそも検出されなかった。
 
-```{r}
+```{r iNEXT_trnL}
 #| echo: false
 #| layout-ncol: 2
+#| cahce : TRUE
+
 # trnL、リード削除なし
 trnL_inext <-
   trnL %>%
@@ -183,9 +185,10 @@ ggiNEXT(trnL_inext_100) +
 
 　プライマーとしてZBJ-ArtF1c/R2cを用いたPCRでは、リード数が2桁以下のASVを削除したものの希釈化曲線の結果がリード数が1桁以下のASVを削除したもの及び削除しなかったものの結果と異なっていた。リード数が1桁以下のASVを削除したもの及び削除しなかったものの間には大きな差異が見られなかったため、全てのASVについて信頼できると考えた。
 
-```{r}
+```{r iNEXT_COI}
 #| echo: false
 #| layout-ncol: 3
+#| cahce : TRUE
 
 # COI、リード削除なし
 COI_iNEXT <-
@@ -226,6 +229,10 @@ ggiNEXT(COI_iNEXT_100) +
 国立科学博物館[「標本・資料統合データベース」](http://db.kahaku.go.jp/webmuseum/)
 
 日本分類学会連合[「日本産生物種数調査」](https://www.ujssb.org/biospnum/search.php)
+
+[Global Biodiversity Information Facility](https://www.gbif.org/)
+
+[National Library of Medicine](https://www.ncbi.nlm.nih.gov/)
 
 九州大学大学院農学研究院昆虫学教室[「昆虫学文献データベース(KONCHUR)」](https://insectdb.kyushu-u.ac.jp/index-j.html)
 
