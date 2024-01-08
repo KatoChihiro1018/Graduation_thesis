@@ -4,7 +4,7 @@ author: "加藤千尋"
 format: html
 editor: visual
 editor_options: 
-  chunk_output_type: inline
+  chunk_output_type: console
 ---
 
 ### iNEXTパッケージを用いた解析のコード
@@ -108,3 +108,49 @@ ggiNEXT(COI_iNEXT_100) +
 -   ASV_136\
     COIでPCRしているにもかかわらず、植物のヘラオオバコが検出されている\
     →COIのPCRなので植物については除く(先輩の卒論を参照)
+
+### 種同定表と対応させる
+
+```{r}
+# trnL
+# ASV表の読み込み
+ASV_trnL <- readxl::read_xlsx("data_raw/ASV.xlsx", sheet = "trnL対応表")
+
+# trnLのnallow down
+trnL_種対応 <- trnL %>%
+  select(ASV_ID, Shinmats23_trnL, Chiba23_trnL, Tsudanum23_trnL) %>% 
+  full_join(ASV_trnL, by=c("ASV_ID" = "ASV_ID"))
+
+# 目単位で数える
+trnL_種対応_目 <- trnL_種対応 %>% 
+  group_by(目) %>% 
+  tally()
+
+# 科単位で数える
+trnL_種対応_科 <- trnL_種対応 %>% 
+  group_by(科) %>% 
+  tally()
+
+```
+
+```{r}
+# COI
+# ASV表の読み込み
+ASV_COI <- readxl::read_xlsx("data_raw/ASV.xlsx", sheet = "COI対応表")
+
+# COIのnallow down
+COI_種対応 <- COI %>%
+  select(ASV_ID, Shinmats23_ZBJ, Chiba23_ZBJ, Tsudanum23_ZBJ) %>% 
+  full_join(ASV_COI, by=c("ASV_ID" = "ASV_ID"))
+
+# 目単位で数える
+COI_種対応_目 <- COI_種対応 %>% 
+  group_by(目) %>% 
+  tally()
+
+# 科単位で数える
+COI_種対応_科 <- COI_種対応 %>% 
+  group_by(科) %>% 
+  tally()
+
+```
