@@ -297,7 +297,7 @@ No.**18**\
 
 **No.31**\
 **Title**: 日本産ミミズ大図鑑\
-**Author**: \
+**Author**:\
 **Year**:\
 **Link**: <https://japanese-mimizu.jimdofree.com/>\
 **Contents**: ミミズの分類\
@@ -306,12 +306,12 @@ No.**18**\
 ------------------------------------------------------------------------
 
 **No.32**\
-**Title**:\
-**Author**:\
-**Year**:\
-**Link**:\
-**Contents**:\
-**Usage**:
+**Title**: Counting with DNA in metabarcoding studies: How should we convert sequence reads to dietary data?\
+**Author**: Bruce E. Deagle他\
+**Year**: 2018\
+**Link**: <https://doi.org/10.1111/mec.14734>\
+**Contents**: DNAメタバーコーディングの課題点\
+**Usage**: 1.3
 
 ------------------------------------------------------------------------
 

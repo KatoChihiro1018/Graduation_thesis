@@ -123,33 +123,41 @@ trnL_種対応 <- trnL %>%
 
 # 目単位で数える
 trnL_種対応_目 <- trnL_種対応 %>% 
-  group_by(目) %>% 
-  tally()
+  count(目) 
 
 # 目単位_新松戸
 trnL_種対応_目s <- trnL_種対応 %>% 
   filter(Shinmats23_trnL > 0) %>% 
-  group_by(目) %>% 
-  tally()
+  count(目) 
 
 # 目単位_千葉
 trnL_種対応_目c <- trnL_種対応 %>% 
   filter(Chiba23_trnL > 0) %>% 
-  group_by(目) %>% 
-  tally()
-
+  count(目) 
 
 # 目単位_津田沼
 trnL_種対応_目t <- trnL_種対応 %>% 
   filter(Tsudanum23_trnL > 0) %>% 
-  group_by(目) %>% 
-  tally()
+  count(目)
 
 # 科単位で数える
 trnL_種対応_科 <- trnL_種対応 %>% 
-  group_by(科) %>% 
-  tally()
+  count(科)
 
+# 科単位_新松戸
+trnL_種対応_科s <- trnL_種対応 %>% 
+  filter(Shinmats23_trnL > 0) %>% 
+  count(科)
+
+# 科単位_千葉
+trnL_種対応_科c <- trnL_種対応 %>% 
+  filter(Chiba23_trnL > 0) %>% 
+  count(科)
+
+# 科単位_津田沼
+trnL_種対応_科t <- trnL_種対応 %>% 
+  filter(Tsudanum23_trnL > 0) %>% 
+  count(科)
 ```
 
 ```{r}
@@ -191,4 +199,21 @@ COI_種対応_科 <- COI_種対応 %>%
   group_by(科) %>% 
   tally()
 
+# 科単位_新松戸
+COI_種対応_科s <- COI_種対応 %>% 
+  filter(Shinmats23_ZBJ > 0) %>% 
+  group_by(科) %>% 
+  tally()
+
+# 科単位_千葉
+COI_種対応_科c <- COI_種対応 %>% 
+  filter(Chiba23_ZBJ > 0) %>% 
+  group_by(科) %>% 
+  tally()
+
+# 科単位_津田沼
+COI_種対応_科t <- COI_種対応 %>% 
+  filter(Tsudanum23_ZBJ > 0) %>% 
+  group_by(科) %>% 
+  tally()
 ```
