@@ -7,6 +7,8 @@ editor: visual
 
 ## 要旨
 
-都市やその周辺地域の生態系は、人間活動の影響を大きく受けることから、他の自然生態系とは異なる特徴を持つと考えられる(都市生態系)。また、この都市生態系は、都市人口の増加に伴い拡大している。本研究は、都市鳥として知られるムクドリの糞を2023年7月に千葉県内3か所で採取し、次世代シーケンサーを用いたDNAメタバーコーディング法によってその内容物の分析を行った。ムクドリは昆虫を主とした動物と植物を共に餌として捕食するため、糞に含まれるDNAを解析することにより都市生態系の一旦が明らかになると考えた。都市における野生生物の生態を知ることで、今後の生物多様性保全に配慮した都市計画考案の一助とする。
+都市やその周辺地域の生態系は、人間活動の影響を大きく受けることから他の自然生態系とは異なる特徴を持っており、都市生態系と呼ばれている。また、この都市生態系は、都市人口の増加に伴い拡大している。本研究は、都市鳥として知られるムクドリの糞を2023年7月に千葉県内3か所で採取し、次世代シーケンサーを用いたDNAメタバーコーディング法によってその内容物の分析を行った。ムクドリは昆虫を主とした動物と植物を共に餌として捕食するため、糞に含まれるDNAを解析することにより都市生態系の一旦が明らかになると考えた。都市における野生生物の生態研究を通じて、今後の生物多様性保全に配慮した都市計画考案の一助とする。
 
 ## Abstract
+
+Cities and their surrounding areas are different from other natural ecosystems because they are heavily influenced by human activities and are therefore referred to as urban ecosystems. These urban ecosystems expand with population growth and development. In this study, starling feces were collected from three locations in Chiba Prefecture in July 2023. DNA metabarcoding, using a next-generation sequencer, was performed for their composition analysis. Analyzing prey DNA in starling feces allowed us to explore their ecological relationships in urban environments, since their diet includes both insects and plants.  Through the study of urban wildlife ecology, we aim to establish an urban development that actively protects biodiversity.
