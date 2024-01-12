@@ -13,6 +13,7 @@ editor_options:
 # 関数の読み込み
 library(tidyverse)
 library(iNEXT)
+library(vegan)
 
 # データの読み込み
 COI <- read_csv("data_raw/COICustom157bp/23111007_1COICustom157bp/4_相同性が高い生物種リスト(BLAST結果10位まで).csv")
@@ -216,4 +217,28 @@ COI_種対応_科t <- COI_種対応 %>%
   filter(Tsudanum23_ZBJ > 0) %>% 
   group_by(科) %>% 
   tally()
+```
+
+### Veganパッケージを用いた生物多様度の計算
+
+```{r}
+#シャノン・ウィナーの生物多様度計算
+
+sw計算trnL目 <- read_csv("data_raw/sw計算用trnL目.csv") %>%
+  column_to_rownames("chiten")
+vegan::diversity(sw計算trnL目, index = "shannon")
+
+sw計算trnL科 <- read_csv("data_raw/sw計算用trnL科.csv") %>%
+  column_to_rownames("chiten")
+vegan::diversity(sw計算trnL科, index = "shannon")
+
+sw計算COI目 <- read_csv("data_raw/sw計算用COI目.csv") %>%
+  column_to_rownames("chiten")
+vegan::diversity(sw計算COI目, index = "shannon")
+
+sw計算COI科 <- read_csv("data_raw/sw計算用COI科.csv") %>%
+  column_to_rownames("chiten")
+vegan::diversity(sw計算COI科, index = "shannon")
+
+
 ```
