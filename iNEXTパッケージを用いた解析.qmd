@@ -219,7 +219,7 @@ COI_種対応_科t <- COI_種対応 %>%
   tally()
 ```
 
-### Veganパッケージを用いた生物多様度の計算
+### Veganパッケージを用いた生物多様度の計算α
 
 ```{r}
 #シャノン・ウィナーの生物多様度計算
@@ -240,5 +240,26 @@ sw計算COI科 <- read_csv("data_raw/sw計算用COI科.csv") %>%
   column_to_rownames("chiten")
 vegan::diversity(sw計算COI科, index = "shannon")
 
+
+```
+
+### veganパッケージを用いた生物多様度の計算β
+
+```{r}
+j計算trnL目 <- read_csv("data_raw/sw計算用trnL目.csv") %>% 
+  column_to_rownames("chiten")
+vegan::vegdist(j計算trnL目, method = "jaccard")
+
+j計算trnL科 <- read_csv("data_raw/sw計算用trnL科.csv") %>% 
+  column_to_rownames("chiten")
+vegan::vegdist(j計算trnL科, method = "jaccard")
+
+j計算COI目 <- read_csv("data_raw/sw計算用COI目.csv") %>% 
+  column_to_rownames("chiten")
+vegan::vegdist(j計算COI目, method = "jaccard")
+
+j計算COI科 <- read_csv("data_raw/sw計算用COI科.csv") %>% 
+  column_to_rownames("chiten")
+vegan::vegdist(j計算COI科, method = "jaccard")
 
 ```
