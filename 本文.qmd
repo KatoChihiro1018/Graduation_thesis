@@ -19,9 +19,9 @@ COI <- read_csv("data_raw/COICustom157bp/23111007_1COICustom157bp/4_相同性が
 trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_相同性が高い生物種リスト(BLAST結果10位まで).csv")
 ```
 
-## 第1章　研究背景・目的
+# 第1章　研究背景・目的
 
-### 1.1　生態系及び都市生態系について
+## 1.1　生態系及び都市生態系について
 
 　生態系とは、競争関係・敵対関係・相利関係などの生物間の相互関係と、それを取り巻く物理的な環境、またその環境と生物間の相互関係を総合的にとらえた概念である。
 
@@ -37,7 +37,7 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 
 　日本は都市人口の増加が比較的早い時期に進んだ地域であり、都市化にともなう環境問題への生態学的な観点にもとづいた対応を目指して、古くから都市生態学が発展してきた(土屋,2013)。しかし、日本における都市の生物多様性研究は応用面を念頭に進められながらも、具体的な固有価値や有用価値の評価とは十分に連動してこなかった(土屋,2018)。
 
-### 1.2　食性解析について
+## 1.2　食性解析について
 
 ### 1.2.1　食性解析について
 
@@ -70,7 +70,7 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 
 　DNAメタバーコーディング法による糞を用いた食性解析の先行研究としては、昆虫を対象としたもの(岸本ら,2015)、カモ類及びニホンジカ及びカモシカを対象としたもの(安藤ら,2020)、海洋鳥及びトキを対象としたもの(小村ら,2020)などが挙げられる。また、海外にはDNAメタバーコーディング法によるムクドリの食性解析を実施した先行研究も存在する(Sungbae et al., 2016)。
 
-### 1.3　ムクドリについて
+## 1.3　ムクドリについて
 
 ### 1.3.1　ムクドリの特徴
 
@@ -96,9 +96,9 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 
 　また、ムクドリはねぐらに集まってからも大きな鳴き声を出し続けるため居場所を特定しやすいことや、一度に大量のサンプルを採取することができること、駅前の街路樹をねぐらにすることが多いためねぐらに足を運びやすいことなど、サンプリングがしやすいこともムクドリを調査対象とした理由の一つである。
 
-## 第2章　材料と方法
+# 第2章　材料と方法
 
-### 2.1　サンプリング
+## 2.1　サンプリング
 
 　本研究では、千葉県北西部の3地点にてムクドリ *Sturnus cineraceus* の排泄物のサンプリングを行った。
 
@@ -130,46 +130,35 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 
 　鳥の排泄物に含まれている尿酸にはDNA抽出を阻害する効果があることが指摘されている(Ericsson,2017)。そのため、DNA抽出を行う前にサンプリングした排泄物について白く見える尿酸を取り除く作業を行った。
 
-### 2.2　DNA抽出
+## 2.2　DNA抽出
 
 　QIAamp DNA Stoolキットのプロトコルを元に、DNA抽出を行った。
 
 1.  2mlのマイクロ遠心チューブに4mmジルコニアビーズ3粒を入れ、事前に破砕したサンプルを180mg～220mg入れた。温度上昇でDNAが分解されるのを避けるため、サンプルはできる限り氷上で扱った。
 2.  Inhibit Buffer 1.0mlを各サンプルに加え、転倒混和した。サンプルとInhibit Bufferが完全に混ざるまで、ボルテックスを用いて最高速度で1分間攪拌した。
-3.  2.の液を70℃のウォーターバスで5分間インキュベートした。その際、チューブに水が入らないようパラフィルムで覆った。
+3.  2.の液を70℃のウォーターバスで5分間インキュベートした。
 4.  3.でインキュベートしたチューブを最高速度で1分間遠心し、糞便サンプルの粒子をペレット化させた。
 5.  新しい1.5mlマイクロ遠心チューブにproteinase K 15μlを加えた。
 6.  4.の上澄み液 200μlを5.のチューブに加えた。
 7.  6.にBuffer AL 200μlを加え、15秒間ボルテックスで攪拌した。
 8.  7.のチューブを55℃のウォーターバスで3時間インキュベートした。インキュベート中も、時々転倒混和を行った。
 9.  8.のチューブに99.5% ethanol 200μlを加え、ボルテックスで攪拌した。
-10. 2mlコレクションチューブにQIAamp spin columnをセットし、QIAamp spin columnの縁を濡らさないように9.のチューブの内容液600μlを垂らした。QIAamp spin columnのキャップを閉めて最高速度で1分間遠心した。遠心後、内容液がQIAamp spin columnの上に残っていた場合は、QIAamp spin columnが空になるまで追加で遠心を行った。QIAamp spin columnを新しい2mlコレクションチューブに移し、ろ液の入っているチューブは廃棄した。
-11. QIAamp spin columnのキャップを慎重に開け、Buffer AW1 500μlを加えた。キャップを閉めて最高速度で1分間遠心した。QIAamp spin columnを新しい2mlコレクションチューブに移し、ろ液の入っているチューブは廃棄した。
-12. QIAamp spin columnのキャップを慎重に開け、Buffer AW2 500μlを加えた。キャップを閉めて最高速度で3分間遠心した。QIAamp spin columnを新しい2mlコレクションチューブに移し、ろ液の入っているチューブは廃棄した。
+10. 2mlコレクションチューブにQIAamp spin columnをセットし、QIAamp spin columnの縁を濡らさないように9.のチューブの内容液600μlを垂らした。QIAamp spin columnのキャップを閉めて最高速度で1分間遠心した。遠心後、内容液がQIAamp spin columnの上に残っていた場合は、QIAamp spin columnが空になるまで追加で遠心を行った。
+11. QIAamp spin columnのキャップを慎重に開け、Buffer AW1 500μlを加えた。キャップを閉めて最高速度で1分間遠心した。
+12. QIAamp spin columnのキャップを慎重に開け、Buffer AW2 500μlを加えた。キャップを閉めて最高速度で3分間遠心した。
 13. 12.のコレクションチューブを最高速度で3分間遠心し、Buffer AW2の残りを完全に除去した。
 14. 新しい1.5mlマイクロ遠心チューブにラベリングし、13.のQIAamp spin columnを移した。QIAamp spin columnのキャップを慎重に開けてBuffer ATE 100μlを加え、室温で1分間置いたのち最高速度で1分間遠心操作を行ってDNAを溶出した。
 15. QubitとNanodropを用いてDNAの濃度と純度を測定した。得られたDNA溶液は-30℃で冷凍保管した。
 
-### 2.3　PCR増幅
+## 2.3　PCR増幅
 
-　2.2で抽出したDNAのPCR増幅を行った。ムクドリは雑食性であるため、動物食用の増幅プライマーとしてZBJ-Artを、植物食用の増幅プライマーとしてtrnLを使用した。
+　2.2で抽出したDNAを鋳型にPCR増幅を行った。ムクドリは雑食性であるため、動物食用プライマーと植物食用プライマーを使用した。
 
 ### 2.3.1　1stPCR
 
-　1stPCRでは、PCR組成液として2X Master Mix6.0μl、10μM 1st primers F0.24μl、10μM 1st primers R0.24μl、Template DNA1.0μl、滅菌超純水2.52μlの合計10μlを0.2mlチューブに入れた。温度条件は、95℃15分、94℃30秒、57℃90℃、72℃1分、72℃10分で行った。94℃30秒、57℃90秒、72℃1分の部分は35サイクル行った。
+　1stPCRでは、PCR組成液として2X Master Mix6.0μl、10μM 1st primers F0.24μl、10μM 1st primers R0.24μl、Template DNA1.0μl、滅菌超純水2.52μlの合計10μlを0.2mlチューブに入れた。温度条件は、95℃15分、94℃30秒、57℃90℃、72℃1分、72℃10分で、94℃30秒、57℃90秒、72℃1分の部分は35サイクル行った。
 
-　1stPCR後、得られた1stPCR産物を用いて電気泳動を行い、バンドが100-600bpに出ていることを確認したのち、生物技研へ発送した。
-
-| 1stPCR反応組成     | 液量   |
-|:-------------------|:-------|
-| 2X Master Mix      | 6.0μl  |
-| 10μM 1st primers F | 0.24μl |
-| 10μM 1st primers R | 0.24μl |
-| Template DNA       | 1.0μl  |
-| 滅菌超純水         | 2.52μl |
-| total              | 10μl   |
-
-: 1stPCR反応組成 {#tbl-1stPCR組成}
+　1stPCR後、得られた1stPCR産物を用いて電気泳動を行い、バンドが100-600bpに出ていることを確認したのち、株式会社生物技研へ発送した。
 
 　使用したprimerの配列は次の通りである。
 
@@ -182,7 +171,7 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 
 : 1stPCRで使用したプライマーの配列 {#tbl-1stPCRプライマー}
 
-　ZBJ-Art(Zeale et al., 2011)は節足動物COI領域を、trnL(Taberlet et al., 1991 & 2007)は葉緑体trnL領域を増幅するためのプライマーである。
+　ZBJ-ArtF1cとZBJ-ArtR2c(Zeale et al., 2011)は節足動物COI領域を、trnL-cとtrnL-h(Taberlet et al., 1991 & 2007)は葉緑体trnL領域を増幅するためのプライマーである。
 
 ### 2.3.2　2ndPCR
 
@@ -218,7 +207,7 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 
 ### 2.4　DNAシーケンス・塩基配列決定・種同定
 
-　DNAシーケンス及び塩基配列決定、機械的な種同定は株式会社生物技研に委託した。
+　DNAシーケンス及び塩基配列決定、DNAデータベース照合による種同定は株式会社生物技研に委託した。
 
 1.  プライマー配列に一致したリードの抽出\
     FASTX-Toolkit (ver. 0.0.14)のfastx_barcode_splitter toolを用いて得られたリード配列の読み始めが使用したプライマー配列と完全に一致するリード配列のみを抽出した。 抽出したリードからプライマー配列と3'端の50塩基をFASTX-Toolkitのfastx_trimmerで削除した。その後、sickle (ver. 1.33)を用いて品質値が20未満の配列を取り除き、40塩基以下の長さとなった配列とそのペア配列を破棄した。
@@ -227,29 +216,50 @@ trnL <- read_csv("data_raw/trnL-c_trnL-h-150bp/23111007_2trnL-c_trnL-h-150bp/4_�
 3.  Qiime2を用いた解析\
     Qiime2 (ver. 2023.7)のdada2プラグインでキメラ配列とノイズ配列を除去した後、代表配列とASV表を出力した。取得した代表配列をNCBIのntに対し、BLASTN (ver. 2.13.0)を行い、系統推定を行った。その他のパラメーターは標準の条件で行った。
 4.  オリジナル解析\
-    Qiime2のtools exportプラグインでqzv形式のデータを閲覧可能なデータに変換した後、生物技研オリジナルプログラムによって閲覧しやすいデータに加工した(株式会社生物技研、2023)。　
+    Qiime2のtools exportプラグインでqzv形式のデータを閲覧可能なデータに変換した後、生物技研オリジナルプログラムによって閲覧しやすいデータに加工した(株式会社生物技研、2023)。
 
-## 第3章　結果及び考察
+　現れた全ての生物種について学名・和名・分類階級の確認を行った。各ASVについて、本稿の結果以降においては、塩基配列の類似度を指標に分類した分類上のユニットであるOTU(Operational Taxonomic Unit)を用いて表すこととした。Identity(ASV配列とデータベース配列の一致した塩基の割合)が等しい生物種が複数検出された場合は、最も近いところで共通する分類群をOTUに当てた(小村,2020)。
 
-### 3.1　サンプリング結果
+　同定の際には、主に以下のデータベースを参照した。その他の細かな情報源については、参考文献に記載する。
+
+国立科学博物館[「標本・資料統合データベース」](http://db.kahaku.go.jp/webmuseum/)
+
+日本分類学会連合[「日本産生物種数調査」](https://www.ujssb.org/biospnum/search.php)
+
+[Global Biodiversity Information Facility](https://www.gbif.org/)
+
+[National Library of Medicine](https://www.ncbi.nlm.nih.gov/)
+
+九州大学大学院農学研究院昆虫学教室[「昆虫学文献データベース(KONCHUR)」](https://insectdb.kyushu-u.ac.jp/index-j.html)
+
+農業環境変動研究センター[「昆虫データベース統合インベントリーシステム」](https://insectweb.rad.naro.go.jp/)
+
+米倉浩司・梶田忠 (2003-)[「BG Plants 和名－学名インデックス」(YList)](http://ylist.info)
+
+[フローラジア floraZia - 東・東南アジア植物多様性データベース](https://florazia.com/)
+
+# 第3章　結果及び考察
+
+## 3.1　サンプリング結果
 
 　「2.1　サンプリング」の項で述べた通りサンプリングを行った。すべてのサンプリングで、各20個のサンプルを得ることができた。
 
-### 3.2　DNAシーケンシング結果
+## 3.2　DNAシーケンシング結果
 
-　「2.3.2　2ndPCR」及び「2.4　DNAシーケンス・塩基配列決定・種同定」の項で述べた通り、生物技研株式会社にて2ndPCR増幅を行い、対象領域のDNAを増幅した後、次世代シーケンサーのMiseqを用いてシーケンシングを行い、塩基配列を決定した。
+　「2.3.2　2ndPCR」及び「2.4　DNAシーケンス・塩基配列決定・種同定」の項で述べた通り、株式会社生物技研にて2ndPCR増幅を行い、対象領域のDNAを増幅した後、次世代シーケンサーのMiseqを用いてシーケンシングを行い、塩基配列を決定した。 　
 
-### 3.3　種同定
+## 3.3　種同定
 
 ### 3.3.1　iNEXTパッケージを用いた解析
 
 　R studio及びiNEXTパッケージ(Chao,2016)を用いて希釈化曲線を描画し、それぞれのPCRで出現した各生物種のリード数に基づいて信頼性を判断した。
 
-　プライマーとしてtrnL-c/hを用いたPCRでは、リード数が2桁以下のASVを削除したものと削除しなかったもので大きな差異が見られなかったため、全てのASVについて信頼できると考えた。また、リード数が1桁のASVはそもそも検出されなかった。
+　プライマーとしてtrnL-c/hを用いたPCRでは、リード数が2桁以下のASV(Amplicon Sequence Variant)を削除したものと削除しなかったもので大きな差異が見られなかったため、全てのASVについて信頼できると考えた。また、リード数が1桁のASVはそもそも検出されなかった。
 
 ```{r iNEXT_trnL}
 #| eval: false
 #| layout-ncol: 2
+#| echo: false
 
 # trnL、リード削除なし
 trnL_inext <-
@@ -276,6 +286,7 @@ ggiNEXT(trnL_inext_100) +
 ```{r iNEXT_COI}
 #| eval: false
 #| layout-ncol: 3
+#| echo: false
 
 # COI、リード削除なし
 COI_iNEXT <-
@@ -308,26 +319,6 @@ ggiNEXT(COI_iNEXT_100) +
 ```
 
 ### 3.3.2　種同定結果
-
-　現れた全ての生物種について学名・和名・分類階級の確認を行った。各ASV ASVについて、塩基配列の類似度を指標に分類した分類上のユニットであるOTU(Operational Taxonomic Unit)を用いて表すこととした。各ASVについて、Identity(ASV配列とデータベース配列の一致した塩基の割合)が等しい生物種が複数検出された場合は、最も近いところで共通する分類群をOTUに当てた(小村,2020)。
-
-　同定の際には、主に以下のデータベースを参照した。その他の細かな情報源については、参考文献に記載する。
-
-国立科学博物館[「標本・資料統合データベース」](http://db.kahaku.go.jp/webmuseum/)
-
-日本分類学会連合[「日本産生物種数調査」](https://www.ujssb.org/biospnum/search.php)
-
-[Global Biodiversity Information Facility](https://www.gbif.org/)
-
-[National Library of Medicine](https://www.ncbi.nlm.nih.gov/)
-
-九州大学大学院農学研究院昆虫学教室[「昆虫学文献データベース(KONCHUR)」](https://insectdb.kyushu-u.ac.jp/index-j.html)
-
-農業環境変動研究センター[「昆虫データベース統合インベントリーシステム」](https://insectweb.rad.naro.go.jp/)
-
-米倉浩司・梶田忠 (2003-)[「BG Plants 和名－学名インデックス」(YList)](http://ylist.info)
-
-[フローラジア floraZia - 東・東南アジア植物多様性データベース](https://florazia.com/)
 
 　植物を対象としたtrnL-c/hを用いたPCRでは35OTU、ZBJ-ArtF1c/R2cを用いたPCRでは75OTUが得られた。
 
@@ -393,7 +384,7 @@ ggiNEXT(COI_iNEXT_100) +
 植物を対象としたtrnL-c/hを用いたPCRで得られた目・科とOTU数
 :::
 
-　節足動物を対象としたZBJ-ArtF1c/R2cを用いたPCRで得られた75OTUを分類階層の界の段階で分類すると、動物界が74OTU、植物界が1OTU得られた。ZBJ-ArtF1c/R2cは節足動物用に設計されたプライマーであり、無脊椎動物用途にも使用されている。そのため、植物界の1OTUは非特異的な検出として除外する。なお、無脊椎動物用途では検出能力が未確認かつPCR増幅が不安定である可能性があるため、サンプル間でのリード数の比較は行わないものとする。
+　節足動物を対象としたZBJ-ArtF1c/R2cを用いたPCRで得られた75OTUを分類階層の界の段階で分類すると、動物界が74OTU、植物界が1OTU得られた。ZBJ-ArtF1c/R2cは節足動物用に設計されたプライマーであり、無脊椎動物用途にも使用されている。そのため、植物界の1OTUは非特異的な検出として除外する。なお、無脊椎動物用途では検出能力が未確認かつPCR増幅が不安定である可能性があるため、節足動物以外の生物種についてはサンプル間でのリード数の比較は行わないものとする。
 
 　動物界に絞って門の段階で分類すると、節足動物門が71OTU、環形動物門が2OTU、緩歩動物門が1OTU得られた。綱の段階で分類すると、節足動物門ではそれぞれ昆虫綱が69OTU・甲殻綱が2OTU、環形動物門では貧毛綱が2OTU、緩歩動物門では真クマムシ綱が1OTU得られた。
 
@@ -780,7 +771,7 @@ ggiNEXT(COI_iNEXT_100) +
 : ZBJ-ArtF1c/R2c,科 {tbl-j_COI科}
 :::
 
-### 3.4　各サンプリング地点の特徴
+## 3.4　各サンプリング地点の特徴
 
 　各サンプリング地点の周辺環境の特色について、航空写真を用いて確認した。@fig-周辺環境 は各採取地点の周辺の環境を表した航空写真である。図中の円は、採取地点から半径1kmの領域を表している。
 
@@ -800,9 +791,9 @@ ggiNEXT(COI_iNEXT_100) +
 各採取地点周辺2km圏内の航空写真
 :::
 
-## 第4章　考察及びまとめ
+# 第4章　考察及びまとめ
 
-### 4.1　考察
+## 4.1　考察
 
 　@tbl-shannon を見ると、新松戸では植物食の多様度が高いのに対し動物食の多様度が低くなっている。千葉では植物食は目・科どちらの分類段階においても多様度が3地点の中で最も低いのに対し、動物食ではどちらの分類段階でも多様度が高くなっている。津田沼では植物食動物食どちらも多様度が高い。
 
@@ -812,8 +803,94 @@ ggiNEXT(COI_iNEXT_100) +
 
 　また、 @tbl-jaccard を見ると、動物食植物食どちらのPCRにおいても、また目・科どちらの分類段階においても千葉-津田沼間の距離が最も短くなっていることがわかる。千葉と津田沼は連続した緑地が少ないという点で周辺環境が似ているため、その影響を受けているのではないかと考えられる。
 
-### 4.2　課題と展望
+## 4.2　課題と展望
 
 今後研究を進めていく上では、より正確な種同定を行うために独自のデータベースを作成することも視野に入れるべきだと考えられる。植物食性動物を対象に食性解析を行っている研究では、対象の地域に分布している植物を採集し、ローカルデータベースを作成している場合がある(安藤,2019及び安藤ら,2020)。一方、小村ら(2020)は、非常に広域の採食域を持つ海鳥についてはローカルデータベースを作成することは困難だとし、NCBIのグローバルなデータベースを用いて食物の特定を行っている。どちらを用いるかについて、今回得られた結果をもとに検討が必要である。
 
 来年度以降の展望としては、実際に環境に配慮した都市計画を実施している地域でのサンプリングを追加で実施し、どれくらい差異が生じるのかについての調査を行うことを考えている。候補としては、環境共生をミッションとして掲げており、千葉県内でアクセスが比較的簡単である柏の葉スマートシティが挙げられる。また、新たな調査地点の選定に伴い、調査地点周辺の環境について定量的に比較するための手段を検討したい。
+
+# 参考文献
+
+Deagle BE, Thomas AC, McInnes JC, et al. (2019), Counting with DNA in metabarcoding studies: How should we convert sequence reads to dietary data?. *Mol Ecol*. 28: 391–406.
+
+Dixon, P. (2003), VEGAN, a package of R functions for community ecology. Journal of Vegetation Science, 14: 927-930.
+
+ELMQVIST, T., COLDING, J., BARTHEL, S., BORGSTRÖM, S., DUIT, A., LUNDBERG, J., ANDERSSON, E., AHRNé, K., ERNSTSON, H., FOLKE, C. and BENGTSSON, J. (2004), The Dynamics of Social-Ecological Systems in Urban Landscapes: Stockholm and the National Urban Park, Sweden. Annals of the New York Academy of Sciences, 1023: 308-322.
+
+Hsieh, T.C., Ma, K.H. and Chao, A. (2016), iNEXT: an R package for rarefaction and extrapolation of species diversity (Hill numbers). Methods Ecol Evol, 7: 1451-1456.
+
+Per Eriksson, Evangelos Mourkas, Daniel González-Acuna, Björn Olsen & Patrik Ellström (2017) Evaluation and optimization of microbial DNA extraction from fecal samples of wild Antarctic bird species, Infection Ecology & Epidemiology, 7:1
+
+Sungbae Joo, Jiwon Kim, Chan-Ryul Park, Sangkyu Park(2016), Dietary Shift of White-Cheeked Starlings *Spodiopsar cineraceus* Living in Korean Village Groves around Rice Paddy Fields, Ornithological Science, 15:2
+
+Taichi Fujii, Kaoru Ueno, Motoyasu Minami(2018) Identification of Food Plants in the Diet of Japanese Ptarmigan (*Lagopus mutus japonicus*) in the Japan's Northern Japan Alps using DNA Barcoding, Wildlife and Human Society, 6:2, p.13-18
+
+ZEALE, M.R.K., BUTLIN, R.K., BARKER, G.L.A., LEES, D.C. and JONES, G. (2011) Taxon-specific PCR for DNA barcoding arthropod prey in bat faeces. Molecular Ecology Resources, 11: 236-244
+
+赤嶺光, 石嶺行男, 重川弘宣, 倉持仁志(2000-2001)「常緑越冬性コウライシバ (*Zoysia tenuifolia*, 宇都宮大学選抜種) の冬季における葉身部のアミノ酸含有量に関する研究」『芝草研究』29(2), p.135-137
+
+秋山弘之(2019-2023)「日本産ハイゴケ科・ハイゴケ属は現在どのように扱われているのか」『蘚苔類研究』12(6), p.149-154
+
+安藤温子, 安藤正規, 井鷺裕司(2020)「植物食性動物を対象とした食性解析手法」『日本生態学会誌』70(1), p.77-89
+
+飯島健太郎(2015)「生物多様性保全と都市緑化/可能性と課題」『芝草研究』44(2), p.91-98,
+
+飯田晶子, 曽我昌史, 土屋一彬(2020)「人と生態系のダイナミクス3　都市生態系の歴史と未来」朝倉書店
+
+大野啓一, 谷光清, 佐藤裕一, 佐土原聡(2019)「都市緑地の文化的サービスに関する植生景観解析に基づく評価」『景観生態学』24(1-2), p.83-95
+
+大橋広好, 門田裕一, 邑田仁, 米倉浩司, 木原浩 編(2017)「改訂新版　日本の野生植物4　アオイ科～キョウチクトウ科」平凡社
+
+折戸咲子, 正木隆, 上條隆志(2023-2024)「市街地の森林の鳥類の分布と多様性：林分構造、景観構造・果実資源量の影響及び種・機能群による違い」『保全生態学研究』28(1)
+
+門脇浩明(2019)「生態学におけるビッグデータ解析の手法」『環境技術』48(3), p.126-130
+
+越川重治(2021)「ムクドリの生態系での役割と街路樹のねぐら問題」『樹木医学研究』 25(2), p.73-78
+
+岸本圭子, 伊藤元己(2015)「DNAバーコーディングを活用した昆虫の種間相互作用網の解明」『日本生態学会誌』65(3), p.255-266
+
+小村健人, 向井喜果, 安藤温子, 井鷺裕司(2020)「動物食性動物を対象とした食性解析手法」『日本生態学会誌』70(1), p.91-102
+
+田村明弘, 大塚弘之(1989)「都市における緑の心理的効果」『騒音制御』13(5), p.252-256
+
+土屋一彬, 斎藤昌幸, 弘中豊(2013)「都市生態学序説 : 「まち」の社会生態プロセスを理解する」『 日本生態学会誌』63(2), p. 179-192
+
+土屋一彬, 斎藤昌幸(2018)「都市の生物多様性研究は何を目的や対象としてきたか？： 国内研究の動向分析」『保全生態学研究』23(2), p.265-278
+
+堀田佳那, 石井弘明, 黒田慶子(2014)「アーバンフォレストリー：多様性の高い都市緑地の創生を目指して」『日本緑化工学会誌』40(3), p.505-507
+
+山内彩加, 土屋一彬, 大黒俊哉(2015)「東京都区部におけるムクドリの集団ねぐらと周辺土地利用の関係」『都市計画報告集』14(4),  p.338-342
+
+與那城千恵, 松本邦彦, 澤木昌典(2020)「市街地におけるムクドリの集団ねぐらと周辺環境との関係」『ランドスケープ研究(オンライン論文集)』13, p.80-86
+
+鷲谷いづみ(2022)「生物多様性・生態系の保全の科学」『環境情報科学』51(1), p.9-14
+
+Biological Information System for Marine Life「Platorchestia humicola」<https://www.godac.jamstec.go.jp/bismal/j/view/9030680>
+
+DDBJ「DDBJ Annotated/Assembled Sequences, TPA」<https://www.ddbj.nig.ac.jp/ddbj/tpa.html>
+
+THE IUCN RED LIST OF THREATENED SPIECIES™「Ulmus wallichiana」<https://www.iucnredlist.org/species/30410/9545816>
+
+伊澤和義「日本産ゾウムシデータベース」<http://de05.digitalasia.chubu.ac.jp/index.html>
+
+岡山理科大学生物地球学部生物地球学科旧植物生態学研究室HP「タチキジムシロ　*Potentilla erecta*」<http://www1.ous.ac.jp/garden/hada/plantsdic/angiospermae/dicotyledoneae/choripetalae/rosaceae/potentilla_erecta/potentilla_erecta.htm>
+
+柏の葉キャンパス駅前まちづくり協議会「2023年度 柏の葉キャンパス駅前 ムクドリ対応について」<https://www.kashiwanoha-machikyo.com/post/2023%E5%B9%B4%E5%BA%A6-%E6%9F%8F%E3%81%AE%E8%91%89%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E9%A7%85%E5%89%8D-%E3%83%A0%E3%82%AF%E3%83%89%E3%83%AA%E5%AF%BE%E5%BF%9C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6>
+
+東京大学総合研究博物館「貧毛類標本データベース」<https://umdb.um.u-tokyo.ac.jp/DDoubutu/invertebrate/oligochaeta/index.html>
+
+「日本産ミミズ大図鑑」<https://japanese-mimizu.jimdofree.com/>
+
+広島大学デジタルミュージアム「シラホシコゲチャハエトリ　広島大学東広島キャンパス」<https://www.digital-museum.hiroshima-u.ac.jp/~main/index.php?title=%E3%82%B7%E3%83%A9%E3%83%9B%E3%82%B7%E3%82%B3%E3%82%B2%E3%83%81%E3%83%A3%E3%83%8F%E3%82%A8%E3%83%88%E3%83%AA_%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E6%9D%B1%E5%BA%83%E5%B3%B6%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9&mobileaction=toggle_view_desktop>
+
+吉松慎一, 伊藤昇, 中谷至伸, 吉武啓「農業環境変動研究センター所蔵の田中和夫コレクション オサムシ上科 （昆虫綱：コウチュウ目）標本目録」<https://doi.org/10.24514/00000262>
+
+渡辺恭平, 藤江隼平(2022)「日本産ヒメバチ上科(膜翅目)の属への検索表」<https://nh.kanagawa-museum.jp/www/contents/1643173895521/>
+
+# 付録
+
+## 1.　全ASVリスト
+
+## 2.　本文中で使用したコードについて
+
+本論文で使用したコードは、[https://github.com/KatoChihiro1018/Graduatiothesis](https://github.com/KatoChihiro1018/Graduation_thesis)にて公開している。
